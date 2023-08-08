@@ -48,7 +48,7 @@ Select **CREATE**. Once created, click on the project title.
 --- /task ---
 
 
-Now that you have created a project that identifies images, you need to set out the different ways your images will be classified - `hotdog` and `not_hotdog` - these will be our **classes**.
+Now that you have created a project that identifies images, you need to set out the different ways your images will be classified - `hotdog` and `nothotdog` - these will be our **classes**.
 
 --- task ---
 
