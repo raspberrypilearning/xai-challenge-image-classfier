@@ -76,7 +76,7 @@ Visit the following webpage to find the [data set you can use to train your mode
 
 --- task ---
 
-Look through the training data and **choose 5 images of hotdogs and 5 images of other things** from the data.
+Look through the training data and **choose several images of hotdogs and several images of other things** from the data. The more images of each type you pick, the more accurate your model will be.
 
 Drag and drop your chosen images into the relevant class (`hotdog` or `nothotdog`).
 ![](images/hotdog_classes.png)
