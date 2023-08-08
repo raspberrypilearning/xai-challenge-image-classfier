@@ -113,7 +113,7 @@ You will have to wait a moment while the model trains.
 ### Testing your model
 
 Now that you have trained your model, it is time to test it to see how successful it is.  
-Some data has been kept aside to use as test data. [You can find the images here](https://drive.google.com/drive/folders/1ze4jIZKz-GhRFY-6SmqjiXFE8e-m1LTv?usp=sharing)){:target="_blank"}.
+Some data has been kept aside to use as test data. [You can find the images here](https://drive.google.com/drive/folders/1ze4jIZKz-GhRFY-6SmqjiXFE8e-m1LTv?usp=sharing){:target="_blank"}.
 
 To see how successful your model is at classifying the test data, test your model with some of the images:
 
