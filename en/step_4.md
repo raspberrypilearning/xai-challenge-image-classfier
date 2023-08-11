@@ -267,7 +267,7 @@ From the aqua coloured `Images`{:class="block3operators"} menu, drop a round `ba
 ```blocks3
 when green flag clicked
 if <(recognise image [image] label :: #4b4c60)=((hotdog :: #4b4c60))> then
-say (join (join [I am ] (recognise image [image] confidence :: #4b4c60)) (join [% sure that is a  ] (recognise image [image] label :: #4b4c60)))
+say (join (join [I am ] (recognise image [image :: #3fbc8d] confidence :: #4b4c60)) (join [% sure that is a  ] (recognise image [image :: #3fbc8d] label :: #4b4c60)))
 else
 
 end
@@ -275,6 +275,55 @@ end
 ```
 
 --- /task ---
+
+--- task ---
+
+Right click (or two-finger click on Mac) on your purple `say` block and choose **Duplicate**.
+
+Place the new block into the second slot of the `if / else` block:
+
+```blocks3
+when green flag clicked
+if <(recognise image [image] label :: #4b4c60)=((hotdog :: #4b4c60))> then
+say (join (join [I am ] (recognise image (backdrop image :: #3fbc8d) confidence :: #4b4c60)) (join [% sure that is a  ] (recognise image (backdrop image :: #3fbc8d) label :: #4b4c60)))
+else
+say (join (join [I am ] (recognise image (backdrop image :: #3fbc8d) confidence :: #4b4c60)) (join [% sure that is a  ] (recognise image (backdrop image :: #3fbc8d) label :: #4b4c60)))
+end
+
+```
+--- /task ---
+
+--- task ---
+
+Remove the final green `join` block from your second say block:
+
+```blocks3
+when green flag clicked
+if <(recognise image [image] label :: #4b4c60)=((hotdog :: #4b4c60))> then
+say (join (join [I am ] (recognise image (backdrop image :: #3fbc8d) confidence :: #4b4c60)) (join [% sure that is a  ] (recognise image (image :: #3fbc8d)  label :: #4b4c60)))
+else
+say (join (join [I am ] (recognise image (image :: #3fbc8d)  confidence :: #4b4c60)) [banana])
+end
+
+```
+--- /task ---
+
+--- task ---
+
+Replace the word `banana` with the text `% certain that is NOT a hotdog!`:
+
+```blocks3
+when green flag clicked
+if <(recognise image [image] label :: #4b4c60)=((hotdog :: #4b4c60))> then
+say (join (join [I am ] (recognise image (backdrop image :: #3fbc8d) confidence :: #4b4c60)) (join [% sure that is a  ] (recognise image (image :: #3fbc8d)  label :: #4b4c60)))
+else
+say (join (join [I am ] (recognise image (image :: #3fbc8d)  confidence :: #4b4c60)) [% certain that is NOT a hotdog!])
+end
+
+```
+
+--- /task ---
+
 
 --- task ---
 
@@ -291,7 +340,13 @@ You can upload a new backdrop image in scratch by clicking the backdrop menu in 
 Choose the Upload symbol from the list: 
 ![Image showing the extended Add backdrop menu in scratch the upload icon is highlighted](images/upload_backdrop.png)
 
+In the window that pops up, paste the `image address` of the test image:
+![Image showing a popup file window and a text field which reads your image address here dot jpg ](images/upload_popup.png)
+
+Click **Open**.
+
 --- /collapse ---
+
 
 --- /task ---
 
