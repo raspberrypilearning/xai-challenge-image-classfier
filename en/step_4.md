@@ -266,8 +266,8 @@ From the aqua coloured `Images`{:class="block3operators"} menu, drop a round `ba
 
 ```blocks3
 when green flag clicked
-if <(recognise image (image :: #3fbc8d) label :: #4b4c60)=((hotdog :: #4b4c60))> then
-say (join (join [I am ] (recognise image (backdrop image :: #3fbc8d) confidence :: #4b4c60)) (join [% sure that is a  ] (recognise image (image :: #3fbc8d) label :: #4b4c60)))
+if <(recognise image (backdrop image :: #3fbc8d) label :: #4b4c60)=((hotdog :: #4b4c60))> then
+say (join (join [I am ] (recognise image (backdrop image :: #3fbc8d) confidence :: #4b4c60)) (join [% sure that is a  ] (recognise image (backdrop image :: #3fbc8d) label :: #4b4c60)))
 else
 
 end
@@ -284,7 +284,7 @@ Place the new block into the second slot of the `if / else` block:
 
 ```blocks3
 when green flag clicked
-if <(recognise image (image :: #3fbc8d) label :: #4b4c60)=((hotdog :: #4b4c60))> then
+if <(recognise image (backdrop image :: #3fbc8d) label :: #4b4c60)=((hotdog :: #4b4c60))> then
 say (join (join [I am ] (recognise image (backdrop image :: #3fbc8d) confidence :: #4b4c60)) (join [% sure that is a  ] (recognise image (backdrop image :: #3fbc8d) label :: #4b4c60)))
 else
 say (join (join [I am ] (recognise image (backdrop image :: #3fbc8d) confidence :: #4b4c60)) (join [% sure that is a  ] (recognise image (backdrop image :: #3fbc8d) label :: #4b4c60)))
@@ -299,10 +299,10 @@ Remove the final green `join` block from your second say block:
 
 ```blocks3
 when green flag clicked
-if <(recognise image (image :: #3fbc8d) label :: #4b4c60)=((hotdog :: #4b4c60))> then
-say (join (join [I am ] (recognise image (backdrop image :: #3fbc8d) confidence :: #4b4c60)) (join [% sure that is a  ] (recognise image (image :: #3fbc8d)  label :: #4b4c60)))
+if <(recognise image (backdrop image :: #3fbc8d) label :: #4b4c60)=((hotdog :: #4b4c60))> then
+say (join (join [I am ] (recognise image (backdrop image :: #3fbc8d) confidence :: #4b4c60)) (join [% sure that is a  ] (recognise image (backdrop image :: #3fbc8d)  label :: #4b4c60)))
 else
-say (join (join [I am ] (recognise image (image :: #3fbc8d)  confidence :: #4b4c60)) [banana])
+say (join (join [I am ] (recognise image (backdrop image :: #3fbc8d)  confidence :: #4b4c60)) [banana])
 end
 
 ```
@@ -314,10 +314,10 @@ Replace the word `banana` with the text `% certain that is NOT a hotdog!`:
 
 ```blocks3
 when green flag clicked
-if <(recognise image (image :: #3fbc8d) label :: #4b4c60)=((hotdog :: #4b4c60))> then
-say (join (join [I am ] (recognise image (backdrop image :: #3fbc8d) confidence :: #4b4c60)) (join [% sure that is a  ] (recognise image (image :: #3fbc8d)  label :: #4b4c60)))
+if <(recognise image (backdrop image :: #3fbc8d) label :: #4b4c60)=((hotdog :: #4b4c60))> then
+say (join (join [I am ] (recognise image (backdrop image :: #3fbc8d) confidence :: #4b4c60)) (join [% sure that is a  ] (recognise image (backdrop image :: #3fbc8d)  label :: #4b4c60)))
 else
-say (join (join [I am ] (recognise image (image :: #3fbc8d)  confidence :: #4b4c60)) [% certain that is NOT a hotdog!])
+say (join (join [I am ] (recognise image (backdrop image :: #3fbc8d)  confidence :: #4b4c60)) [% certain that is NOT a hotdog!])
 end
 
 ```
