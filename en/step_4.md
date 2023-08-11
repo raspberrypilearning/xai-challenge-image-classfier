@@ -70,49 +70,88 @@ when green flag clicked
 
 --- /task ---
 
-The next thing we want our application to do is ask the user to input some images - this is the data that will be compared by the model and classfied as `hotdog` or `nothotdog`.
-
 --- task ---
 
-In the blue `Sensing`{:class="block3sensing"} menu, add an `ask (What's your name?) and wait`{:class="block3sensing"} block:
+From the golden  `control`{:class="block3control"} menu, add an `if / else`{:class="block3control"} block to your script.
 
 ```blocks3
 when green flag clicked
-ask [What's your name?] and wait
+if <> then
+
+else
+
+end
+
+```
+
+--- /task ---
+
+The first thing we need our application to do is to determine whether the image our user has uploaded is a hotdog or not. To do this, we want it to compare the uploaded image against the `hotdog` label in the model to see if they match.
+
+--- task ---
+
+From the green `Operators`{:class="block3operators"} menu, place a gem shaped `=`{:class="block3operators"} block into the hole in the golden `if / else`{:class="block3control"} block:
+
+```blocks3
+when green flag clicked
+if <<()=(50)>> then
+
+else
+
+end
+
 ```
 
 --- /task ---
 
 --- task ---
 
-Change the question text to something you like. Ask your user to enter a quote. You could say something like:
-+ What is your quote?
-+ Halt! Who goes there?
-+ Enter your favourite quote to start!
-+ Type something to see if you are a hotdog or a nothotdog!
+Into the first hole, place a black `recognise image (`image`) (label)` block from the Machine learning for Kids menu at the very bottom.
 
 ```blocks3
 when green flag clicked
-ask [You there! What say you?] and wait
+if <((recognise image [image] label :: #4b4c60))=(50)> then
+
+else
+
+end
 ```
 
 --- /task ---
 
 --- task ---
 
-From the purple `Looks`{:class="block3looks"} menu, add a `say (Hello!)`{:class="block3looks"} block to your script.
+Into the second hole (where is says `50`), place a round black `hotdog` bubble from the Machine learning for Kids menu at the very bottom.
 
 ```blocks3
 when green flag clicked
-ask [You there! What say you?] and wait
+if <(recognise image [image] label :: #4b4c60)=((hotdog :: #4b4c60))> then
+
+else
+
+end
+```
+
+--- /task ---
+
+--- task ---
+
+From the purple `Looks`{:class="block3looks"} menu, add a `say (Hello!)`{:class="block3looks"} block to your script in the top slot:
+
+```blocks3
+when green flag clicked
+if <(recognise image [image] label :: #4b4c60)=((hotdog :: #4b4c60))> then
 say [Hello!]
+else
+
+end
 ```
 
 --- /task ---
 
-Now, we're going to create the message your application will show the user when it has classified the image they entered. To do that, we're going to `join`{:class="block3operators"} some bits of text (called strings) with data from your machine learning model using specific blocks. 
+Now, we're going to create the message your application will show the user when it has classified the text they entered. To do that, we're going to `join`{:class="block3operators"} some bits of text (called strings) with data from your machine learning model using specific blocks. 
 
-The example message will say: "I am `(model confidence: number)`% certain you are a `(model label: hotdog/nothotdog)`!
+The example message will say: "I am `(model confidence: number)`% certain you are a `(model label: hero/villain)`!
 
 --- task ---
 
@@ -120,8 +159,11 @@ From the green `Operators`{:class="block3operators"} menu, place a round `join (
 
 ```blocks3
 when green flag clicked
-ask [You there! What say you?] and wait
+if <(recognise image [image] label :: #4b4c60)=((hotdog :: #4b4c60))> then
 say ((join [apple] [banana]))
+else
+
+end
 ```
 
 --- /task ---
@@ -132,8 +174,12 @@ Add another round `join (apple) (banana)`{:class="block3operators"} block into t
 
 ```blocks3
 when green flag clicked
-ask [You there! What say you?] and wait
+if <(recognise image [image] label :: #4b4c60)=((hotdog :: #4b4c60))> then
 say (join ((join [apple] [banana])) [banana])
+else
+
+end
+
 ```
 
 --- /task ---
@@ -144,8 +190,12 @@ Add one last round `join (apple) (banana)`{:class="block3operators"} block into 
 
 ```blocks3
 when green flag clicked
-ask [You there! What say you?] and wait
+if <(recognise image [image] label :: #4b4c60)=((hotdog :: #4b4c60))> then
 say (join (join [apple] [banana]) ((join [apple] [banana])))
+else
+
+end
+
 ```
 --- /task ---
 
@@ -156,42 +206,54 @@ Make sure you include a space at the end!
 
 ```blocks3
 when green flag clicked
-ask [You there! What say you?] and wait
+if <(recognise image [image] label :: #4b4c60)=((hotdog :: #4b4c60))> then
 say (join (join [I am ] [banana]) (join [apple] [banana]))
+else
+
+end
 ```
 --- /task ---
 
 --- task ---
 
-Into the second hole, that says `banana`, drag a black `recognise image [text] (confidence)` block from the Machine learning for kids menu at the very bottom:
+Into the second hole, that says `banana`, drag a black `recognise image [image] (confidence)` block from the Machine learning for kids menu at the very bottom:
 
 ```blocks3
 when green flag clicked
-ask [You there! What say you?] and wait
-say (join (join [I am ] (recognise image [text] confidence :: #4b4c60)) (join [apple] [banana]))
+if <(recognise image [image] label :: #4b4c60)=((hotdog :: #4b4c60))> then
+say (join (join [I am ] (recognise image [image] confidence :: #4b4c60)) (join [apple] [banana]))
+else
+
+end
 ```
 --- /task ---
 
 --- task ---
 
-Into the next (third) hole, that still says `apple`, type `% sure you are a  ` 
+Into the next (third) hole, that still says `apple`, type `% sure that is a  ` 
 Make sure you include a space at the end!
 
 ```blocks3
 when green flag clicked
-ask [You there! What say you?] and wait
-say (join (join [I am ] (recognise image [text] confidence :: #4b4c60)) (join [% sure you are a  ] [banana]))
+if <(recognise image [image] label :: #4b4c60)=((hotdog :: #4b4c60))> then
+say (join (join [I am ] (recognise image [image] confidence :: #4b4c60)) (join [% sure that is a  ] [banana]))
+else
+
+end
 ```
 --- /task ---
 
 --- task ---
 
-Into the last (fourth) hole, that still says `banana`, drag a black `recognise image [text] (label)` block from the Machine learning for kids menu at the very bottom:
+Into the last (fourth) hole, that still says `banana`, drag a black `recognise image [image] (label)` block from the Machine learning for kids menu at the very bottom:
 
 ```blocks3
 when green flag clicked
-ask [You there! What say you?] and wait
-say (join (join [I am ] (recognise image [text] confidence :: #4b4c60)) (join [% sure you are a  ] (recognise image [text] label :: #4b4c60)))
+if <(recognise image [image] label :: #4b4c60)=((hotdog :: #4b4c60))> then
+say (join (join [I am ] (recognise image [image] confidence :: #4b4c60)) (join [% sure that is a  ] (recognise image [image] label :: #4b4c60)))
+else
+
+end
 ```
 
 --- /task ---
@@ -200,21 +262,45 @@ The final piece of the puzzle is to now use the image your user entered as the i
 
 --- task ---
 
-From the light blue `Sensing`{:class="block3sensing"} menu, drop a round `answer`{:class="block3sensing"} bubble into the two white slots which say `text`:
+From the aqua coloured `Images`{:class="block3operators"} menu, drop a round `backdrop image`{:class="block3operators"} bubble into the two white slots which say `image`:
 
 ```blocks3
 when green flag clicked
-ask [You there! What say you?] and wait
-say (join (join [I am ] (recognise image (answer) confidence :: #4b4c60)) (join [% sure you are a  ] (recognise image (answer) label :: #4b4c60)))
+if <(recognise image [image] label :: #4b4c60)=((hotdog :: #4b4c60))> then
+say (join (join [I am ] (recognise image [image] confidence :: #4b4c60)) (join [% sure that is a  ] (recognise image [image] label :: #4b4c60)))
+else
+
+end
+
 ```
 
 --- /task ---
 
 --- task ---
 
-**Click the green flag**, then type or paste some text into the prompt that appears and press **Enter**.
+Add a new backdrop from your test images online. You can do this by copying and pasting the image address into the `Upload Backdrop` menu in Scratch:
 
-Your character will say whether the speaker of those words is a hotdog or a nothotdog and to what certainty!
+--- collapse ---
+---
+title: Uploading a backdrop in Scratch 3
+---
+
+You can upload a new backdrop image in scratch by clicking the backdrop menu in the bottom left of your screen.
+![Image showing the extended Add backdrop menu in scratch](images/backdrop_menu.png)
+
+Choose the Upload symbol from the list: 
+![Image showing the extended Add backdrop menu in scratch the upload icon is highlighted](images/upload_backdrop.png)
+
+--- /collapse ---
+
+--- /task ---
+
+
+--- task ---
+
+**Click the green flag**
+
+Your character will say whether the new backdrop image is a hotdog or not and to what certainty!
 
 --- /task ---
 
