@@ -1,6 +1,6 @@
 ## Make a Machine Learning model
 
-A supermarket has asked you to create a machine learning model that will recognise images of apples and tomatoes.
+Imagine you're trying to cut down on hotdogs and eat more healthily. This detector can help keep you on track by alerting you whenever a sneaky hotdog is on your plate! (In case you couldn't tell!)
 
 Your task is to set up and train a machine learning model which can do this by completing the following steps:
 
