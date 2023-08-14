@@ -71,7 +71,8 @@ Select **Add new label** and create a label for the `hotdog` class.
 
 Visit the following webpages to find the data sets you can use to train your model.
 
-[Hotdog images training set](https://www.flickr.com/photos/raspberrypi/sets/72177720310421034/){:target="_blank"} 
+[[[hotdog-train]]]
+
 [Not Hotdog images training set](https://www.flickr.com/photos/raspberrypi/albums/72177720310409272){:target="_blank"} 
 ![screenshot of a google drive folder filled with different images of hotdogs](images/hotdogs.png)
 
