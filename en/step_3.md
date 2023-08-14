@@ -1,62 +1,8 @@
-## Make a Machine Learning model
+## Train the model
 
-Imagine you're trying to cut down on hotdogs and eat more healthily. This detector can help keep you on track by alerting you whenever a sneaky hotdog is on your plate! (In case you couldn't tell!)
+Imagine teaching a friend how to differentiate between two types of fruits, let's say apples and bananas, by showing them pictures. At first, they might get confused, especially if they've never seen these fruits before. But as you keep showing them more pictures and correcting their mistakes, they start getting the hang of it. After a while, they can correctly identify apples and bananas on their own.
 
-Your task is to set up and train a machine learning model which can do this by completing the following steps:
-
---- task ---
-
-Open the website [Machine Learning for Kids](https://machinelearningforkids.co.uk/#!/login){:target="_blank"}.
-
-
---- /task ---
-
---- task ---
-
-In the screen that appears, choose **Log In** if your mentor gave you some login details. Enter your username and password on the next screen.
-
-![A picture of the blue log in button](images/singup_login.png)
-
-Choose **Sign Up** if you are creating your own account and follow the prompts to create a new account.
-
---- /task ---
-
---- task ---
-
-Select **Go to your Projects**.
-![Image of the blue go to your projects button on machine learning for kids](images/go2projects.png)
-
---- /task ---
-
---- task ---
-
-Select **Add a new project**.
-![Image of a grey button which reads 'Go to your projects'](images/add_new_project.png)
-
---- /task ---
-
---- task ---
-
-Give the project a name and set it to recognise **images**.
-
-![](images/hotdog_nothotdog.png)
-
---- /task ---
-
---- task ---
-
-Select **CREATE**. Once created, click on the project title.
-
-![](images/create_button.png)
-
---- /task ---
-
---- task ---
-
-Select **Train**.
-![](images/train.png)
-
---- /task ---
+Training a machine learning model is kind of like this process, but with a computer instead of a friend. For your classfier, we want to determine 'hotdogs' and 'not hotdogs', so we need to define these two groups to the model, then provide lots of examples of each.
 
 --- task ---
 

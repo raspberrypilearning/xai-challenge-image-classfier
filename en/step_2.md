@@ -1,5 +1,7 @@
 ## Create your machine learning model
 
+Imagine you're trying to cut down on hotdogs and eat more healthily. This detector can help keep you on track by alerting you whenever a sneaky hotdog is on your plate! (In case you couldn't tell!)
+
 First, create your machine learning model on Machine Learning for Kids:
 
 --- task ---
