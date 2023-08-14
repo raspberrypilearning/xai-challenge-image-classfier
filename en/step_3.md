@@ -69,12 +69,11 @@ Select **Add new label** and create a label for the `hotdog` class.
 
 --- task ---
 
-Visit the following webpages to find the data sets you can use to train your model.
+We have collected two image sets for training your new machine learning model here:
 
 [[[hotdog-train]]]
 
-[Not Hotdog images training set](https://www.flickr.com/photos/raspberrypi/albums/72177720310409272){:target="_blank"} 
-![screenshot of a google drive folder filled with different images of hotdogs](images/hotdogs.png)
+[[[not-hotdog-train]]]
 
 --- /task ---
 
@@ -130,16 +129,8 @@ Similarly, if we test the computer program with the same data it trained on, we 
 
 So, it's essential to keep training and testing data separate to ensure that the computer program can perform the task accurately in various situations, not just the ones it has seen before.
 
-<p style='border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;'>
 
 To see how successful your model is at classifying the test data, test your model with some of the images:
-
-You can find the testing images here:
-<a href="(https://www.flickr.com/photos/raspberrypi/albums/72177720310403685)" target="_blank">Hotdog testing images</a> 
-<a href="(https://www.flickr.com/photos/raspberrypi/albums/72177720310403760)" target="_blank">Not Hotdog testing images</a> 
-
-</p>
-
 
 --- task ---
 
@@ -160,6 +151,12 @@ Alternatively, you can:
 
 --- /collapse ---
 
+**You can find the testing images here:**
+
+[[[hotdog-test]]]
+
+[[[nothotdog-test]]]
+
 --- /task ---
 
 --- task ---
@@ -167,6 +164,7 @@ Alternatively, you can:
 Click the **Test with www** button to test your model.
 
 --- /task ---
+
 
 --- task ---
 
