@@ -69,7 +69,10 @@ Select **Add new label** and create a label for the `hotdog` class.
 
 --- task ---
 
-Visit the following webpage to find the [data set you can use to train your model](https://drive.google.com/drive/folders/1aPy0j-8eFe1mSxrlbi_mj709n0j_ShOm?usp=sharing){:target="_blank"} 
+Visit the following webpages to find the data sets you can use to train your model.
+
+[Hotdog images training set](https://www.flickr.com/photos/raspberrypi/sets/72177720310421034/){:target="_blank"} 
+[Not Hotdog images training set](https://www.flickr.com/photos/raspberrypi/albums/72177720310409272){:target="_blank"} 
 ![screenshot of a google drive folder filled with different images of hotdogs](images/hotdogs.png)
 
 --- /task ---
@@ -113,9 +116,29 @@ You will have to wait a moment while the model trains.
 ### Testing your model
 
 Now that you have trained your model, it is time to test it to see how successful it is.  
-Some data has been kept aside to use as test data. [You can find the images here](https://drive.google.com/drive/folders/1ze4jIZKz-GhRFY-6SmqjiXFE8e-m1LTv?usp=sharing){:target="_blank"}.
+Some data has been kept aside to use as test data.
+
+When we want a computer program to learn a specific task, we give it a set of data to learn from. This set of data is called `training data`. It's like the exercises in your textbook that come with answers. You use these exercises to practice and understand the topic.
+
+Once the program has learned from the training data, we need to check how well it has understood the task. To do this, we give it a new set of data it hasn't seen before, called `testing data`. This is similar to the questions on a quiz or test at school. The questions on the test aren't the exact ones you practiced with, but they're about the same topic.
+
+**Why Keep Them Separate?**
+If we use the same data for both training and testing, it's like giving you a math test with the exact same questions you practiced with. You might get all the answers right, but it doesn't show if you understand the topic broadly. It only shows that you know those specific questions.
+
+Similarly, if we test the computer program with the same data it trained on, we can't be sure if it has learned the task broadly or if it just "remembers" that specific data. By using different data for testing, we can get a better idea of how well the program can handle new, unseen situations.
+
+So, it's essential to keep training and testing data separate to ensure that the computer program can perform the task accurately in various situations, not just the ones it has seen before.
+
+<p style='border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;'>
 
 To see how successful your model is at classifying the test data, test your model with some of the images:
+
+You can find the testing images here:
+<a href="(https://www.flickr.com/photos/raspberrypi/albums/72177720310403685)" target="_blank">Hotdog testing images</a> 
+<a href="(https://www.flickr.com/photos/raspberrypi/albums/72177720310403760)" target="_blank">Not Hotdog testing images</a> 
+
+</p>
+
 
 --- task ---
 
