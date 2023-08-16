@@ -106,7 +106,7 @@ end
 
 --- task ---
 
-Into the first hole, place a black `recognise image (`image`) (label)` block from the Machine learning for Kids menu at the very bottom.
+Into the first hole, place a black `recognise image (`image`) (label)` block from the Machine Learning for Kids menu at the very bottom.
 
 ```blocks3
 when green flag clicked
@@ -121,7 +121,7 @@ end
 
 --- task ---
 
-Into the second hole (where is says `50`), place a round black `hotdog` bubble from the Machine learning for Kids menu at the very bottom.
+Into the second hole (where is says `50`), place a round black `hotdog` bubble from the Machine Learning for Kids menu at the very bottom.
 
 ```blocks3
 when green flag clicked
@@ -151,7 +151,7 @@ end
 
 Now, we're going to create the message your application will show the user when it has classified the text they entered. To do that, we're going to `join`{:class="block3operators"} some bits of text (called strings) with data from your machine learning model using specific blocks. 
 
-The example message will say: "I am `(model confidence: number)`% certain you are a `(model label: hero/villain)`!
+The example message will say: "I am `(model confidence: number)`% sure that is a `(model label: hotdog/nothotdog)`!
 
 --- task ---
 
@@ -216,7 +216,7 @@ end
 
 --- task ---
 
-Into the second hole, that says `banana`, drag a black `recognise image [image] (confidence)` block from the Machine learning for kids menu at the very bottom:
+Into the second hole, that says `banana`, drag a black `recognise image [image] (confidence)` block from the Machine Learning for kids menu at the very bottom:
 
 ```blocks3
 when green flag clicked
@@ -245,7 +245,7 @@ end
 
 --- task ---
 
-Into the last (fourth) hole, that still says `banana`, drag a black `recognise image [image] (label)` block from the Machine learning for kids menu at the very bottom:
+Into the last (fourth) hole, that still says `banana`, drag a black `recognise image [image] (label)` block from the Machine Learning for kids menu at the very bottom:
 
 ```blocks3
 when green flag clicked
