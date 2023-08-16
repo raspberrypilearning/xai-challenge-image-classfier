@@ -2,7 +2,7 @@
 
 Imagine teaching a friend how to differentiate between two types of fruits, let's say apples and bananas, by showing them pictures. At first, they might get confused, especially if they've never seen these fruits before. But as you keep showing them more pictures and correcting their mistakes, they start getting the hang of it. After a while, they can correctly identify apples and bananas on their own.
 
-Training a machine learning model is kind of like this process, but with a computer instead of a friend. For your classfier, we want to determine 'hotdogs' and 'not hotdogs', so we need to define these two groups to the model, then provide lots of examples of each.
+Training a machine learning model is kind of like this process, but with a computer instead of a friend. For your classifier, we want to determine 'hotdogs' and 'not hotdogs', so we need to define these two groups to the model, then provide lots of examples of each.
 
 --- task ---
 
@@ -15,20 +15,34 @@ Select **Add new label** and create a label for the `hotdog` class.
 
 --- task ---
 
-We have collected two image sets for training your new machine learning model here:
+We have collected two image sets for training your new machine learning model here (Click the plus sign to expand the collapses here):
 
 [[[hotdog-train]]]
 
 [[[not-hotdog-train]]]
 
+Look through the training data and **choose several images of hotdogs and several images of other things** from the data. The more images of each type you pick, the more accurate your model will be. 
+
 --- /task ---
 
 --- task ---
 
-Look through the training data and **choose several images of hotdogs and several images of other things** from the data. The more images of each type you pick, the more accurate your model will be.
-
 Drag and drop your chosen images into the relevant class (`hotdog` or `nothotdog`).
 ![](images/hotdog_classes.png)
+
+--- collapse ---
+---
+title: Adding training images with Drag & Drop
+---
+
+To 'drag and drop' images into your classes easily, you can set up the windows on your screen side-by-side by clicking on and dragging the tab you are working on to one side of the screen:
+![Image showing two windows side by side on a computer screen. On the left are several images of hotdogs, on the right is a window showing a machine learning model's classes page](images/splitscreen.png)
+
+Once you have set your screen up like this, you can simply just click on the training images you want to use and drag them into the right class, then release the mouse button:
+
+![](images/dragdrop.gif)
+
+--- /collapse ---
 
 --- /task ---
 
@@ -64,12 +78,12 @@ You will have to wait a moment while the model trains.
 Now that you have trained your model, it is time to test it to see how successful it is.  
 Some data has been kept aside to use as test data.
 
-When we want a computer program to learn a specific task, we give it a set of data to learn from. This set of data is called `training data`. It's like the exercises in your textbook that come with answers. You use these exercises to practice and understand the topic.
+When we want a computer program to learn a specific task, we give it a set of data to learn from. This set of data is called `training data`. It's like the exercises in your textbook that come with answers. You use these exercises to practise and understand the topic.
 
-Once the program has learned from the training data, we need to check how well it has understood the task. To do this, we give it a new set of data it hasn't seen before, called `testing data`. This is similar to the questions on a quiz or test at school. The questions on the test aren't the exact ones you practiced with, but they're about the same topic.
+Once the program has learned from the training data, we need to check how well it has understood the task. To do this, we give it a new set of data it hasn't seen before, called `testing data`. This is similar to the questions on a quiz or test at school. The questions on the test aren't the exact ones you practised with, but they're about the same topic.
 
 **Why Keep Them Separate?**
-If we use the same data for both training and testing, it's like giving you a math test with the exact same questions you practiced with. You might get all the answers right, but it doesn't show if you understand the topic broadly. It only shows that you know those specific questions.
+If we use the same data for both training and testing, it's like giving you a maths test with the exact same questions you practised with. You might get all the answers right, but it doesn't show if you understand the topic broadly. It only shows that you know those specific questions.
 
 Similarly, if we test the computer program with the same data it trained on, we can't be sure if it has learned the task broadly or if it just "remembers" that specific data. By using different data for testing, we can get a better idea of how well the program can handle new, unseen situations.
 
@@ -124,11 +138,11 @@ Once you have tested a few of the images, answer the following questions in your
 
 ### Bias and data
 
-When we teach a computer to recognize different things, like dogs and cats, we need to give it lots of examples to learn from. These examples are called **training data**.
+When we teach a computer to recognise different things, like dogs and cats, we need to give it lots of examples to learn from. These examples are called **training data**.
 
-If we use a training dataset that contains mostly small dogs and large cats, this does not accurately represent the real world as there are also large dogs and small cats. If the data used to train the model is not representative of what you're trying to model, neither will the prediction be which your model makes.
+If we use a training dataset that contains mostly small dogs and large cats, this does not accurately represent the real world as there are also large dogs and small cats. If the data used to train the model is not representative of what you're trying to model,the prediction which your model makes won't be either.
 
-This is called **bias**, which means the computer is favoring one thing over another. We can fix this by using a more diverse training dataset that includes different sizes and breeds of dogs and cats. By doing this, we can help the computer learn to recognize the features that distinguish each type of animal, rather than just relying on the size of the training examples.
+This is called **bias**, which means the computer is favouring one thing over another. We can fix this by using a more diverse training dataset that includes different sizes and breeds of dogs and cats. By doing this, we can help the computer learn to recognise the features that distinguish each type of animal, rather than just relying on the size of the training examples.
 
 <p style='border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;'>
 By using more diverse and representative training data, we can help ensure that the computer makes accurate and fair predictions when it encounters new examples. This can make the computer more useful and reliable for different applications, from sorting pet adoption photos to assisting veterinarians in diagnosing animal health issues.
