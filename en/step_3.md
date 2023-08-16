@@ -2,7 +2,7 @@
 
 Imagine teaching a friend how to differentiate between two types of fruits, let's say apples and bananas, by showing them pictures. At first, they might get confused, especially if they've never seen these fruits before. But as you keep showing them more pictures and correcting their mistakes, they start getting the hang of it. After a while, they can correctly identify apples and bananas on their own.
 
-Training a machine learning model is kind of like this process, but with a computer instead of a friend. For your classfier, we want to determine 'hotdogs' and 'not hotdogs', so we need to define these two groups to the model, then provide lots of examples of each.
+Training a machine learning model is kind of like this process, but with a computer instead of a friend. For your classifier, we want to determine 'hotdogs' and 'not hotdogs', so we need to define these two groups to the model, then provide lots of examples of each.
 
 --- task ---
 
@@ -15,20 +15,34 @@ Select **Add new label** and create a label for the `hotdog` class.
 
 --- task ---
 
-We have collected two image sets for training your new machine learning model here:
+We have collected two image sets for training your new machine learning model here (Click the plus sign to expand the collapses here):
 
 [[[hotdog-train]]]
 
 [[[not-hotdog-train]]]
 
+Look through the training data and **choose several images of hotdogs and several images of other things** from the data. The more images of each type you pick, the more accurate your model will be. 
+
 --- /task ---
 
 --- task ---
 
-Look through the training data and **choose several images of hotdogs and several images of other things** from the data. The more images of each type you pick, the more accurate your model will be.
-
 Drag and drop your chosen images into the relevant class (`hotdog` or `nothotdog`).
 ![](images/hotdog_classes.png)
+
+--- collapse ---
+---
+title: Adding training images with Drag & Drop
+---
+
+To 'drag and drop' images into your classes easily, you can set up the windows on your screen side-by-side by clicking on and dragging the tab you are working on to one side of the screen:
+![Image showing two windows side by side on a computer screen. On the left are several images of hotdogs, on the right is a window showing a machine learning model's classes page](images/splitscreen.png)
+
+Once you have set your screen up like this, you can simply just click on the training images you want to use and drag them into the right class, then release the mouse button:
+
+![](images/dragdrop.gif)
+
+--- /collapse ---
 
 --- /task ---
 

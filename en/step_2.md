@@ -54,7 +54,7 @@ Now that you have created a project that identifies images, you need to set out 
 
 --- task ---
 
-Select **Train**. This will let your add new training data to your model.
+Select **Train**. This will let you add new training data to your model.
 ![](images/train.png)
 
 --- /task ---
