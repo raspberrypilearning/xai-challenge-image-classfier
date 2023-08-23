@@ -52,6 +52,22 @@ Select **CREATE**. Once created, click on the project title.
 
 Now that you have created a project that identifies images, you need to set out the different ways your images will be classified - `hotdog` and `nothotdog` - these will be our **classes**.
 
+--- collapse ---
+---
+title: Classes and Labels
+---
+
+**Labels** are the specific names we give to each picture so the model knows what it's looking at, while **classes** are the major categories we're trying to sort those pictures into. In our case, we only have two classes: 'hotdog' and 'not hotdog'.
+
+For instance, if you see an image of a hotdog, you'll label that picture as 'hotdog'. By doing this, you're telling the model that this image belongs to the 'hotdog' class. Similarly, if you have a picture of a banana, you'll label it 'not hotdog', placing it in the 'not hotdog' class. The model will then use these labels to understand and differentiate between images that are hotdogs and those that aren't.
+
+![An image explaining that a class is a major category images can be sorted into, showing a group of apple pictures in one box, next to an explanation that a label is given to each image to show which class it fits into, with a single apple picture](images/class_vs_label.png)
+
+Remember, the classes you select should help the model make clear decisions. In our scenario, it's pretty straightforward: every image is either a `hotdog` or `not hotdog`. But in other projects, you could have multiple classes based on various characteristics of the data you're working with.
+
+--- /collapse ---
+
+
 --- task ---
 
 Select **Train**. This will let you add new training data to your model.
