@@ -1,11 +1,11 @@
 ## Introduction
 Welcome to Stage 2 of the Experience AI Challenge! You're about to embark on a visual odyssey where we cross the landscapes of art, machine learning, and coding.
 
-Ever wonder how your favourite photo app knows which pics have cats and which ones have dogs? That’s all thanks to the magic of image classification. Imagine giving your computer a superpower, where it can “see” and understand pictures, just like we do!
+Ever wonder how your favorite photo app distinguishes between pictures of cats and pictures of dogs? It's all due to the science of image classification. It's like equipping your computer with a tool that allows it to process and tell images apart.
 
 At the heart of this superpower is teaching your computer what to look for. It’s kind of like teaching a baby to recognise stuff. “This is a hotdog. This isn’t.” By showing it tons of pictures, the computer starts picking up on tiny clues – like colours, shapes, and patterns.
 
-And here’s the super cool part: once you get the hang of it with hotdogs, you can teach your computer to recognise anything! Your favourite sneakers, your coolest comic book characters, or even different types of dances! The sky’s the limit once you grasp the basics of image classification. So, are you ready to give your tech some awesome “seeing” skills? Let’s dive in!
+And here’s the super cool part: once you get the hang of it with hotdogs, you can teach your computer to recognise anything! Your favourite sneakers, your coolest comic book characters, or even different types of dances! The sky’s the limit once you grasp the basics of image classification. So, are you ready to give your tech some awesome vision skills? Let’s dive in!
 
 
 ![Image showing a cat standing in front of a hotdog saying the confidence score of a machine learning model that it is indeed a hotdog](images/demo_shot.png)
