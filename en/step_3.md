@@ -160,7 +160,7 @@ Imagine you were making an app that predicted the age of people.
 <br><br>
 Now think of 10 people who you could use to take photos of for your training data? What bias would you introduce? Have you picked people from a range of age groups? Would you app work with all people from all over the world with different faces and skin tones?
 <br><br>
-By using more diverse and representative training data, we can help ensure that the computer makes accurate and fair predictions when it encounters new examples. This can make the computer more useful and reliable for different applications, from sorting pet adoption photos to assisting veterinarians in diagnosing animal health issues.
+By using more diverse and representative training data to avoid <strong>bias</strong>, we can help ensure that the computer makes accurate and fair predictions when it encounters new examples. This can make the computer more useful and reliable for different applications, from sorting pet adoption photos to assisting veterinarians in diagnosing animal health issues.
 </p>
 
 Let's start making your machine learning application in Scratch and think about what it will do!
