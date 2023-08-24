@@ -1,6 +1,6 @@
 ## Train the model
 
-Imagine teaching a friend how to differentiate between two types of fruits, let's say apples and bananas, by showing them pictures. At first, they might get confused, especially if they've never seen these fruits before. But as you keep showing them more pictures and correcting their mistakes, they start getting the hang of it. After a while, they can correctly identify apples and bananas on their own.
+Imagine teaching a friend how to differentiate between two types of fruits, let's say apples and bananas, by showing them pictures. At first, they might get confused, especially if they've never seen these fruits before. But as you keep showing them more pictures and they get a better understanding of the patterns in the differences and similarities, they start getting the hang of it. After a while, they can correctly identify apples and bananas on their own.
 
 Training a machine learning model is kind of like this process, but with a computer instead of a friend. For your classifier, we want to determine 'hotdogs' and 'not hotdogs', so we need to define these two groups to the model, then provide lots of examples of each.
 
@@ -78,9 +78,14 @@ You will have to wait a moment while the model trains.
 Now that you have trained your model, it is time to test it to see how successful it is.  
 Some data has been kept aside to use as test data.
 
-When we want a computer program to learn a specific task, we give it a set of data to learn from. This set of data is called `training data`. It's like the exercises in your textbook that come with answers. You use these exercises to practise and understand the topic.
+--- collapse ---
+---
+title: Training Data vs. Testing Data
+---
 
-Once the program has learned from the training data, we need to check how well it has understood the task. To do this, we give it a new set of data it hasn't seen before, called `testing data`. This is similar to the questions on a quiz or test at school. The questions on the test aren't the exact ones you practised with, but they're about the same topic.
+To teach a computer program a specific task, we provide it with a particular set of data called **training data**. This set is similar to the exercises in a textbook that have answers; they help in understanding and practicing the topic.
+
+After processing the training data, it's essential to check the program's performance. For this, we introduce it to a new set of data known as **testing data**. Think of this as taking a quiz or test at school: the questions aren't identical to what you practiced, but they cover the same topic.
 
 **Why Keep Them Separate?**
 If we use the same data for both training and testing, it's like giving you a maths test with the exact same questions you practised with. You might get all the answers right, but it doesn't show if you understand the topic broadly. It only shows that you know those specific questions.
@@ -89,6 +94,7 @@ Similarly, if we test the computer program with the same data it trained on, we 
 
 So, it's essential to keep training and testing data separate to ensure that the computer program can perform the task accurately in various situations, not just the ones it has seen before.
 
+--- /collapse ---
 
 To see how successful your model is at classifying the test data, test your model with some of the images:
 
@@ -145,6 +151,10 @@ If we use a training dataset that contains mostly small dogs and large cats, thi
 This is called **bias**, which means the computer is favouring one thing over another. We can fix this by using a more diverse training dataset that includes different sizes and breeds of dogs and cats. By doing this, we can help the computer learn to recognise the features that distinguish each type of animal, rather than just relying on the size of the training examples.
 
 <p style='border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;'>
+Imagine you were making an app that predicted the age of people. 
+<br><br>
+Now think of 10 people who you could use to take photos of for your training data? What bias would you introduce? Have you picked people from a range of age groups? Would you app work with all people from all over the world with different faces and skin tones?
+<br><br>
 By using more diverse and representative training data, we can help ensure that the computer makes accurate and fair predictions when it encounters new examples. This can make the computer more useful and reliable for different applications, from sorting pet adoption photos to assisting veterinarians in diagnosing animal health issues.
 </p>
 
