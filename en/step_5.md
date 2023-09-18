@@ -40,4 +40,10 @@ Use the `recognise image (backdrop image) confidence` block with size and volume
 
 **This was just the warm up!** Now that you know how to build a text classification application that can detect hotdogs, what do **you** want to make? 
 
-In the next stage of the Experience AI challenge, you'll get to use the skills you've learnt in this project to create something totally cool and unique using Scratch and Machine Learning! [Click here](https://projects.raspberrypi.org/en/projects/xai-challenge-submit/) to take the next exciting step in creating your own Artificial Intelligence app!
+In the next stage of the Experience AI challenge, you'll get to use the skills you've learnt in this project to create something totally cool and unique using Scratch and Machine Learning! 
+
+--- task ---
+
+[Click here](https://projects.raspberrypi.org/en/projects/xai-challenge-submit/) to take the next exciting step in creating your own Artificial Intelligence app!
+
+--- /task ---
