@@ -1,13 +1,13 @@
-title: Hotdog / Not Hotdog
+title: Hotdog / Not hotdog
 hero_image: images/banner.png
-description: create your own image classifier machine learning model to tell you if an image is of a hotdog or not.
+description: Create your own image classifier machine learning model to tell you if an image is of a hotdog or not.
 version: 4
 listed: false
 copyedit: false
 last_tested: "2022-05-19"
 steps:
   - title: Introduction
-  - title: Create a Machine Learning model
+  - title: Create a machine learning model
   - title: Train the model
-  - title: Make a Scratch Application
+  - title: Make a Scratch application
   - title: What next?
