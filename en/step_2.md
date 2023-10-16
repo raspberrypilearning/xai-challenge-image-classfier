@@ -12,9 +12,9 @@ Open the website [Machine Learning for Kids](https://machinelearningforkids.co.u
 
 --- task ---
 
-In the screen that appears, choose **Log In** if your mentor gave you some login details. Enter your username and password on the next screen.
+On the screen that appears, choose **Log In** if your mentor gave you some login details. Enter your username and password on the next screen.
 
-![A picture of the blue log in button](images/singup_login.png)
+![A picture of the blue log in button.](images/singup_login.png)
 
 Choose **Sign Up** if you are creating your own account and follow the prompts to create a new account.
 
@@ -22,15 +22,15 @@ Choose **Sign Up** if you are creating your own account and follow the prompts t
 
 --- task ---
 
-Select **Go to your Projects**.
-![Image of the blue go to your projects button on machine learning for kids](images/go2projects.png)
+Select **Go to your projects**.
+![Image of the blue 'go to your projects' button on Machine Learning for Kids.](images/go2projects.png)
 
 --- /task ---
 
 --- task ---
 
 Select **Add a new project**.
-![Image of a grey button which reads 'Go to your projects'](images/add_new_project.png)
+![Image of a grey button that reads 'Go to your projects'.](images/add_new_project.png)
 
 --- /task ---
 
@@ -54,16 +54,16 @@ Now that you have created a project that identifies images, you need to set out 
 
 --- collapse ---
 ---
-title: Classes and Labels
+title: Classes and labels
 ---
 
 **Labels** are the specific names we give to each picture so the model knows what it's looking at, while **classes** are the major categories we're trying to sort those pictures into. In our case, we only have two classes: 'hotdog' and 'not hotdog'.
 
-For instance, if you see an image of a hotdog, you'll label that picture as 'hotdog'. By doing this, you're telling the model that this image belongs to the 'hotdog' class. Similarly, if you have a picture of a banana, you'll label it 'not hotdog', placing it in the 'not hotdog' class. The model will then use these labels to understand and differentiate between images that are hotdogs and those that aren't.
+For instance, if you see an image of a hotdog, you'll label that picture as 'hotdog'. By doing this, you're telling the model that this image belongs to the 'hotdog' class. Similarly, if you have a picture of a banana, you'll label it 'not hotdog', placing it in the 'not hotdog' class. The model will then use these labels to differentiate between images that are hotdogs and those that aren't.
 
-![An image explaining that a class is a major category images can be sorted into, showing a group of apple pictures in one box, next to an explanation that a label is given to each image to show which class it fits into, with a single apple picture](images/class_vs_label.png)
+![An image explaining that a class is a major category images can be sorted into, showing a group of apple pictures in one box, next to an explanation that a label is given to each image to show which class it fits into, with a single apple picture.](images/class_vs_label.png)
 
-Remember, the classes you select should help the model make clear decisions. In our scenario, it's pretty straightforward: every image is either a `hotdog` or `not hotdog`. But in other projects, you could have multiple classes based on various characteristics of the data you're working with.
+Remember, the classes you select should help the model make clear predictions. In our scenario, it's pretty straightforward: every image is either a `hotdog` or `not hotdog`. But in other projects, you could have multiple classes based on various characteristics of the data you're working with.
 
 --- /collapse ---
 
