@@ -3,29 +3,29 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Your model is trained, tested and ready to use, but to do that you need to create a scratch project that can allow your user to input images and classify the input as `hotdog` or `nothotdog`.
+Your model is trained, tested, and ready to use, but to do that you need to create a Scratch project that can allow your user to input images and classify the input as `hotdog` or `nothotdog`.
 </div>
 <div>
-![Image showing a cat standing in front of a hotdog saying the confidence score of a machine learning model that it is indeed a hotdog](images/demo_shot.png){:width="300px"}
+![Photo of a hotdog with the Scratch cartoon cat in front of it. The cat has a speech bubble giving the confidence score from a machine learning model that has correctly classified the image as a hotdog.](images/demo_shot.png){:width="300px"}
 </div>
 </div>
 
 
 ### **Your project will:**
-+ Take image input from the user
-+ Use your trained ML model to classify images
-+ Tell the user whether the thing in the picture is a 'hotdog' or not
++ Take image inputs from the user
++ Use your trained ML model to classify the images
++ Tell the user whether the thing in the picture is a hotdog or not
 
 --- task ---
 
 On your [**project page**](https://machinelearningforkids.co.uk/#!/projects){:target="_blank"}, select **Make**:
-![Image showing a button reading Make and the explanation 'Use the machine learning model you've trained to make a game or app, in Scratch, Python, or App Inventor'](images/make_button.png)
+![Image showing a button reading Make and the explanation 'Use the machine learning model you've trained to make a game or app, in Scratch, Python, or App Inventor'.](images/make_button.png)
 
 --- /task ---
 
 --- task ---
 
-On the next page, select Scratch 3
+On the next page, select **Scratch 3**.
 ![](images/scratch3_button.png)
 
 --- /task ---
@@ -37,7 +37,7 @@ A special fork of Scratch will open in a new tab. When it does, you will see an 
 The new grey blocks you can see in that menu allow you to access your machine learning model from within your project:
 </div>
 <div>
-![Image showing several Scratch block menus, with the final one being titled MusicWellness with the machine learning for kids logo](images/model_blocks_menu.png){:width="100px"}
+![Image showing several Scratch block menus, with the final one being titled MusicWellness with the Machine Learning for Kids logo.](images/model_blocks_menu.png){:width="100px"}
 </div>
 </div>
 
@@ -46,14 +46,14 @@ The new grey blocks you can see in that menu allow you to access your machine le
 title: Pro tip - Save your work!
 ---
 
-This special version of Scratch allows you to access your machine learning model, as well as use the music database blocks - **if you try to open your project in another version of Scratch online it won’t work**. 
+This special version of Scratch allows you to access your machine learning model, **but** if you try to open your project in another version of Scratch online **it won’t work**. 
 
-A hack you can use is to save your work to your computer often. Once you have the .sb3 file for your project saved you can open it again later, or on another computer:
+A solution to this is to save your work to your computer. Once you have the .sb3 file for your project saved, you can open it again later, or on another computer:
 + Go to [rpf.io/mlscratch](rpf.io/mlscratch){:target="_blank"} to get to this special fork of Scratch 
-+ Once Scratch opens choose File > Load from your Computer
-+ Select your file in the window that appears to get back to where you left off
++ Once Scratch opens, choose **File** > **Load from your computer**
++ Select your file in the window that appears to return to where you left off
 
-![Image showing the Scratch file menu with the Load from your computer option highlighted](images/load_menu.png)
+![Image showing the Scratch file menu with the Load from your computer option highlighted.](images/load_menu.png)
 
 
 Save your work as often as you can to make sure you don’t lose any progress!
@@ -62,7 +62,7 @@ Save your work as often as you can to make sure you don’t lose any progress!
 
 --- task ---
 
-Add a `when green flag clicked`{:class="block3events"} block to your workspace. This is the script that will run the first time we start the project. 
+Add a `when green flag clicked`{:class="block3events"} block to your workspace. This is the script that will run the first time you start the project. 
 
 ```blocks3
 when green flag clicked
@@ -72,7 +72,7 @@ when green flag clicked
 
 --- task ---
 
-From the golden  `control`{:class="block3control"} menu, add an `if / else`{:class="block3control"} block to your script.
+From the golden `control`{:class="block3control"} menu, add an `if / else`{:class="block3control"} block to your script.
 
 ```blocks3
 when green flag clicked
@@ -86,7 +86,7 @@ end
 
 --- /task ---
 
-The first thing we need our application to do is to determine whether the image our user has uploaded is a hotdog or not. To do this, we want it to compare the uploaded image against the `hotdog` label in the model to see if they match.
+The first thing you need your application to do is to determine whether the image your user has uploaded is a hotdog or not. To do this, we want it to compare the uploaded image against the `hotdog` label in the model to see if they match.
 
 --- task ---
 
@@ -106,7 +106,7 @@ end
 
 --- task ---
 
-Into the first hole, place a black `recognise image (`image`) (label)` block from the Machine Learning for Kids menu at the very bottom.
+Into the first space, place a black `recognise image (`image`) (label)` block from the Machine Learning for Kids menu at the very bottom.
 
 ```blocks3
 when green flag clicked
@@ -121,7 +121,7 @@ end
 
 --- task ---
 
-Into the second hole (where is says `50`), place a round black `hotdog` bubble from the Machine Learning for Kids menu at the very bottom.
+Into the second gap (where it says `50`), place a round black `hotdog` bubble from the Machine Learning for Kids menu at the very bottom.
 
 ```blocks3
 when green flag clicked
@@ -149,13 +149,13 @@ end
 
 --- /task ---
 
-Now, we're going to create the message your application will show the user when it has classified the text they entered. To do that, we're going to `join`{:class="block3operators"} some bits of text (called strings) with data from your machine learning model using specific blocks. 
+Now, you're going to create the message your application will show to the user when it has classified the image they entered. To do that, you're going to `join`{:class="block3operators"} some bits of text (called strings) with data from your machine learning model using specific blocks. 
 
 The example message will say: "I am `(model confidence: number)`% sure that is a `(model label: hotdog/nothotdog)`!
 
 --- task ---
 
-From the green `Operators`{:class="block3operators"} menu, place a round `join (apple) (banana)`{:class="block3operators"} block into the hole in the purple `say`{:class="block3looks"} block:
+From the green `Operators`{:class="block3operators"} menu, place a round `join (apple) (banana)`{:class="block3operators"} block into the space in the purple `say`{:class="block3looks"} block:
 
 ```blocks3
 when green flag clicked
@@ -170,7 +170,7 @@ end
 
 --- task ---
 
-Add another round `join (apple) (banana)`{:class="block3operators"} block into the hole in the one you just added (it doesn't matter which hole):
+Add another round `join (apple) (banana)`{:class="block3operators"} block into the gap in the block you just added (it doesn't matter which gap you put it in):
 
 ```blocks3
 when green flag clicked
@@ -186,7 +186,7 @@ end
 
 --- task ---
 
-Add one last round `join (apple) (banana)`{:class="block3operators"} block into the hole in the one you just added (it doesn't matter which hole):
+Add one last round `join (apple) (banana)`{:class="block3operators"} block into the other gap in the first block you added:
 
 ```blocks3
 when green flag clicked
@@ -201,7 +201,7 @@ end
 
 --- task ---
 
-Into the first hole that says `apple`, type `I am ` 
+Into the first gap that says `apple`, type `I am ` 
 Make sure you include a space at the end!
 
 ```blocks3
@@ -216,7 +216,7 @@ end
 
 --- task ---
 
-Into the second hole, that says `banana`, drag a black `recognise image [image] (confidence)` block from the Machine Learning for kids menu at the very bottom:
+Into the second gap, which says `banana`, drag a black `recognise image [image] (confidence)` block from the Machine Learning for Kids menu at the very bottom:
 
 ```blocks3
 when green flag clicked
@@ -230,13 +230,13 @@ end
 
 --- task ---
 
-Into the next (third) hole, that still says `apple`, type `% sure that is a  ` 
+Into the next (third) gap, which still says `apple`, type `% sure that is a ` 
 Make sure you include a space at the end!
 
 ```blocks3
 when green flag clicked
 if <(recognise image [image] label :: #4b4c60)=(hotdog :: #4b4c60)> then
-say (join (join [I am ] (recognise image [image] confidence :: #4b4c60)) (join [% sure that is a  ] [banana]))
+say (join (join [I am ] (recognise image [image] confidence :: #4b4c60)) (join [% sure that is a ] [banana]))
 else
 
 end
@@ -245,12 +245,12 @@ end
 
 --- task ---
 
-Into the last (fourth) hole, that still says `banana`, drag a black `recognise image [image] (label)` block from the Machine Learning for kids menu at the very bottom:
+Into the last (fourth) gap, which still says `banana`, drag a black `recognise image [image] (label)` block from the Machine Learning for Kids menu at the very bottom:
 
 ```blocks3
 when green flag clicked
 if <(recognise image [image] label :: #4b4c60)=(hotdog :: #4b4c60)> then
-say (join (join [I am ] (recognise image [image] confidence :: #4b4c60)) (join [% sure that is a  ] (recognise image [image] label :: #4b4c60)))
+say (join (join [I am ] (recognise image [image] confidence :: #4b4c60)) (join [% sure that is a ] (recognise image [image] label :: #4b4c60)))
 else
 
 end
@@ -262,12 +262,12 @@ The final piece of the puzzle is to now use the image your user entered as the i
 
 --- task ---
 
-From the aqua coloured `Images`{:class="block3operators"} menu, drop a round `backdrop image`{:class="block3operators"} bubble into the white slots which say `image`:
+From the aqua coloured `Images`{:class="block3operators"} menu, drop three round `backdrop image`{:class="block3operators"} bubbles into the white slots that say `image`:
 
 ```blocks3
 when green flag clicked
 if <(recognise image (backdrop image :: #3fbc8d) label :: #4b4c60)=(hotdog :: #4b4c60)> then
-say (join (join [I am ] (recognise image (backdrop image :: #3fbc8d) confidence :: #4b4c60)) (join [% sure that is a  ] (recognise image (backdrop image :: #3fbc8d) label :: #4b4c60)))
+say (join (join [I am ] (recognise image (backdrop image :: #3fbc8d) confidence :: #4b4c60)) (join [% sure that is a ] (recognise image (backdrop image :: #3fbc8d) label :: #4b4c60)))
 else
 
 end
@@ -278,16 +278,16 @@ end
 
 --- task ---
 
-Right click (or two-finger click on Mac) on your purple `say` block and choose **Duplicate**.
+Right-click (or two-finger click on a Mac) on your purple `say` block and choose **Duplicate**.
 
 Place the new block into the second slot of the `if / else` block:
 
 ```blocks3
 when green flag clicked
 if <(recognise image (backdrop image :: #3fbc8d) label :: #4b4c60)=(hotdog :: #4b4c60)> then
-say (join (join [I am ] (recognise image (backdrop image :: #3fbc8d) confidence :: #4b4c60)) (join [% sure that is a  ] (recognise image (backdrop image :: #3fbc8d) label :: #4b4c60)))
+say (join (join [I am ] (recognise image (backdrop image :: #3fbc8d) confidence :: #4b4c60)) (join [% sure that is a ] (recognise image (backdrop image :: #3fbc8d) label :: #4b4c60)))
 else
-say (join (join [I am ] (recognise image (backdrop image :: #3fbc8d) confidence :: #4b4c60)) (join [% sure that is a  ] (recognise image (backdrop image :: #3fbc8d) label :: #4b4c60)))
+say (join (join [I am ] (recognise image (backdrop image :: #3fbc8d) confidence :: #4b4c60)) (join [% sure that is a ] (recognise image (backdrop image :: #3fbc8d) label :: #4b4c60)))
 end
 
 ```
@@ -295,14 +295,14 @@ end
 
 --- task ---
 
-Remove the final green `join` block from your second say block:
+Remove the final green `join` block from your second `say` block:
 
 ```blocks3
 when green flag clicked
 if <(recognise image (backdrop image :: #3fbc8d) label :: #4b4c60)=(hotdog :: #4b4c60)> then
 say (join (join [I am ] (recognise image (backdrop image :: #3fbc8d) confidence :: #4b4c60)) (join [% sure that is a  ] (recognise image (backdrop image :: #3fbc8d)  label :: #4b4c60)))
 else
-say (join (join [I am ] (recognise image (backdrop image :: #3fbc8d)  confidence :: #4b4c60)) [banana])
+say (join (join [I am ] (recognise image (backdrop image :: #3fbc8d) confidence :: #4b4c60)) [banana])
 end
 
 ```
@@ -315,9 +315,9 @@ Replace the word `banana` with the text `% certain that is NOT a hotdog!`:
 ```blocks3
 when green flag clicked
 if <(recognise image (backdrop image :: #3fbc8d) label :: #4b4c60)=(hotdog :: #4b4c60)> then
-say (join (join [I am ] (recognise image (backdrop image :: #3fbc8d) confidence :: #4b4c60)) (join [% sure that is a  ] (recognise image (backdrop image :: #3fbc8d)  label :: #4b4c60)))
+say (join (join [I am ] (recognise image (backdrop image :: #3fbc8d) confidence :: #4b4c60)) (join [% sure that is a ] (recognise image (backdrop image :: #3fbc8d) label :: #4b4c60)))
 else
-say (join (join [I am ] (recognise image (backdrop image :: #3fbc8d)  confidence :: #4b4c60)) [% certain that is NOT a hotdog!])
+say (join (join [I am ] (recognise image (backdrop image :: #3fbc8d) confidence :: #4b4c60)) [% certain that is NOT a hotdog!])
 end
 
 ```
@@ -331,17 +331,17 @@ Add a new backdrop from your test images online. You can do this by copying and 
 
 --- collapse ---
 ---
-title: Uploading a backdrop in Scratch 3
+title: Upload a backdrop in Scratch 3
 ---
 
-You can upload a new backdrop image in scratch by clicking the backdrop menu in the bottom left of your screen.
-![Image showing the extended Add backdrop menu in scratch](images/backdrop_menu.png)
+You can upload a new backdrop image in Scratch by clicking the backdrop menu in the bottom left of your screen.
+![Image showing the extended Add backdrop menu in Scratch.](images/backdrop_menu.png)
 
 Choose the Upload symbol from the list: 
-![Image showing the extended Add backdrop menu in scratch the upload icon is highlighted](images/upload_backdrop.png)
+![Image showing the extended Add backdrop menu in Scratch with the upload icon highlighted.](images/upload_backdrop.png)
 
 In the window that pops up, paste the `image address` of the test image:
-![Image showing a popup file window and a text field which reads your image address here dot jpg ](images/upload_popup.png)
+![Image showing a pop-up file window and a text field, which reads your image address here dot jpg ](images/upload_popup.png)
 
 Click **Open**.
 
@@ -359,5 +359,5 @@ Your character will say whether the new backdrop image is a hotdog or not and to
 
 --- /task ---
 
-In the next step, you can customise the way your application looks by adding costumes and add some new features that activate depending on the classification of your input.
+In the next step, you can customise the way your application looks by adding costumes and some new features that activate depending on the classification of your input.
 

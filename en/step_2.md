@@ -50,20 +50,22 @@ Select **CREATE**. Once created, click on the project title.
 --- /task ---
 
 
-Now that you have created a project that identifies images, you need to set out the different ways your images will be classified - `hotdog` and `nothotdog` - these will be our **classes**.
+Now that you have created an blank project to recognise images, you need to set out the different ways your images will be classified - `hotdog` and `nothotdog` - these will be our **classes**.
 
 --- collapse ---
 ---
 title: Classes and Labels
 ---
 
-**Labels** are the specific names we give to each picture so the model knows what it's looking at, while **classes** are the major categories we're trying to sort those pictures into. In our case, we only have two classes: 'hotdog' and 'not hotdog'.
+**Classes** are the major categories we're trying to sort those images into. In our case, we only have two **classes**: 'hotdog' and 'not hotdog'.
 
-For instance, if you see an image of a hotdog, you'll label that picture as 'hotdog'. By doing this, you're telling the model that this image belongs to the 'hotdog' class. Similarly, if you have a picture of a banana, you'll label it 'not hotdog', placing it in the 'not hotdog' class. The model will then use these labels to understand and differentiate between images that are hotdogs and those that aren't.
+**Labels** are the specific names we give to each picture in the training data to help the model identify what is in each image.
+
+For instance, if you see an image of a hotdog in the training data, you'll label that picture as `hotdog`. By doing this, you're telling the model that this image belongs to the `hotdog` class. Similarly, if you have a picture of a banana, you'll label it `not hotdog`, placing it in the `not hotdog` class. Once you train it on this information, the model can be used to predict which class new images belong to.
 
 ![An image explaining that a class is a major category images can be sorted into, showing a group of apple pictures in one box, next to an explanation that a label is given to each image to show which class it fits into, with a single apple picture](images/class_vs_label.png)
 
-Remember, the classes you select should help the model make clear decisions. In our scenario, it's pretty straightforward: every image is either a `hotdog` or `not hotdog`. But in other projects, you could have multiple classes based on various characteristics of the data you're working with.
+You can use as many classes as you want in your model. In our scenario, it's pretty straightforward: every image is either a `hotdog` or `not hotdog`. But in other projects, you could have multiple classes based on various characteristics of the data you're working with. (The colours of the rainbow, all of your pets, your favourite pokemon....)
 
 --- /collapse ---
 
