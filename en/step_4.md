@@ -3,7 +3,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Your model is trained, tested, and ready to use, but to do that you need to create a Scratch project that can allow your user to input images and classify the input as `hotdog` or `nothotdog`.
+Your model is trained, tested, and ready to use, but to use it you need to create a Scratch project that can allow your user to input images and classify the input as `hotdog` or `nothotdog`.
 </div>
 <div>
 ![Photo of a hotdog with the Scratch cartoon cat in front of it. The cat has a speech bubble giving the confidence score from a machine learning model that has correctly classified the image as a hotdog.](images/demo_shot.png){:width="300px"}
@@ -86,7 +86,7 @@ end
 
 --- /task ---
 
-The first thing you need your application to do is to determine whether the image your user has uploaded is a hotdog or not. To do this, we want it to compare the uploaded image against the `hotdog` label in the model to see if they match.
+Your application needs to classify the image your user has uploaded as `hotdog` or `not-hotdog`. To do this, it needs to compare the uploaded image against the `hotdog` class in the model.
 
 --- task ---
 
@@ -149,9 +149,9 @@ end
 
 --- /task ---
 
-Now, you're going to create the message your application will show to the user when it has classified the image they entered. To do that, you're going to `join`{:class="block3operators"} some bits of text (called strings) with data from your machine learning model using specific blocks. 
+Now, you're going to create the message your application will show to the user when it has classified their image. To do that, you're going to `join`{:class="block3operators"} some bits of text (called strings) with data from your machine learning model using specific blocks. 
 
-The example message will say: "I am `(model confidence: number)`% sure that is a `(model label: hotdog/nothotdog)`!
+The example message will say: "The model is `(confidence: number)`% certain that is a `(model label: hotdog/not_hotdog)`%  !
 
 --- task ---
 
@@ -201,13 +201,13 @@ end
 
 --- task ---
 
-Into the first gap that says `apple`, type `I am ` 
+Into the first gap that says `apple`, type `The model is ` 
 Make sure you include a space at the end!
 
 ```blocks3
 when green flag clicked
 if <(recognise image [image] label :: #4b4c60)=(hotdog :: #4b4c60)> then
-say (join (join [I am ] [banana]) (join [apple] [banana]))
+say (join (join [The model is ] [banana]) (join [apple] [banana]))
 else
 
 end
@@ -221,7 +221,7 @@ Into the second gap, which says `banana`, drag a black `recognise image [image] 
 ```blocks3
 when green flag clicked
 if <(recognise image [image] label :: #4b4c60)=(hotdog :: #4b4c60)> then
-say (join (join [I am ] (recognise image [image] confidence :: #4b4c60)) (join [apple] [banana]))
+say (join (join [The model is  ] (recognise image [image] confidence :: #4b4c60)) (join [apple] [banana]))
 else
 
 end
@@ -230,13 +230,13 @@ end
 
 --- task ---
 
-Into the next (third) gap, which still says `apple`, type `% sure that is a ` 
+Into the next (third) gap, which still says `apple`, type `% certain that is a ` 
 Make sure you include a space at the end!
 
 ```blocks3
 when green flag clicked
 if <(recognise image [image] label :: #4b4c60)=(hotdog :: #4b4c60)> then
-say (join (join [I am ] (recognise image [image] confidence :: #4b4c60)) (join [% sure that is a ] [banana]))
+say (join (join [The model is  ] (recognise image [image] confidence :: #4b4c60)) (join [% certain that is a ] [banana]))
 else
 
 end
@@ -250,7 +250,7 @@ Into the last (fourth) gap, which still says `banana`, drag a black `recognise i
 ```blocks3
 when green flag clicked
 if <(recognise image [image] label :: #4b4c60)=(hotdog :: #4b4c60)> then
-say (join (join [I am ] (recognise image [image] confidence :: #4b4c60)) (join [% sure that is a ] (recognise image [image] label :: #4b4c60)))
+say (join (join [The model is ] (recognise image [image] confidence :: #4b4c60)) (join [% certain that is a ] (recognise image [image] label :: #4b4c60)))
 else
 
 end
@@ -267,7 +267,7 @@ From the aqua coloured `Images`{:class="block3operators"} menu, drop three round
 ```blocks3
 when green flag clicked
 if <(recognise image (backdrop image :: #3fbc8d) label :: #4b4c60)=(hotdog :: #4b4c60)> then
-say (join (join [I am ] (recognise image (backdrop image :: #3fbc8d) confidence :: #4b4c60)) (join [% sure that is a ] (recognise image (backdrop image :: #3fbc8d) label :: #4b4c60)))
+say (join (join [The model is  ] (recognise image (backdrop image :: #3fbc8d) confidence :: #4b4c60)) (join [% certain that is a ] (recognise image (backdrop image :: #3fbc8d) label :: #4b4c60)))
 else
 
 end
@@ -285,9 +285,9 @@ Place the new block into the second slot of the `if / else` block:
 ```blocks3
 when green flag clicked
 if <(recognise image (backdrop image :: #3fbc8d) label :: #4b4c60)=(hotdog :: #4b4c60)> then
-say (join (join [I am ] (recognise image (backdrop image :: #3fbc8d) confidence :: #4b4c60)) (join [% sure that is a ] (recognise image (backdrop image :: #3fbc8d) label :: #4b4c60)))
+say (join (join [The model is  ] (recognise image (backdrop image :: #3fbc8d) confidence :: #4b4c60)) (join [% certain that is a ] (recognise image (backdrop image :: #3fbc8d) label :: #4b4c60)))
 else
-say (join (join [I am ] (recognise image (backdrop image :: #3fbc8d) confidence :: #4b4c60)) (join [% sure that is a ] (recognise image (backdrop image :: #3fbc8d) label :: #4b4c60)))
+say (join (join [The model is  ] (recognise image (backdrop image :: #3fbc8d) confidence :: #4b4c60)) (join [% certain that is a ] (recognise image (backdrop image :: #3fbc8d) label :: #4b4c60)))
 end
 
 ```
@@ -300,9 +300,9 @@ Remove the final green `join` block from your second `say` block:
 ```blocks3
 when green flag clicked
 if <(recognise image (backdrop image :: #3fbc8d) label :: #4b4c60)=(hotdog :: #4b4c60)> then
-say (join (join [I am ] (recognise image (backdrop image :: #3fbc8d) confidence :: #4b4c60)) (join [% sure that is a  ] (recognise image (backdrop image :: #3fbc8d)  label :: #4b4c60)))
+say (join (join [The model is  ] (recognise image (backdrop image :: #3fbc8d) confidence :: #4b4c60)) (join [% certain that is a  ] (recognise image (backdrop image :: #3fbc8d)  label :: #4b4c60)))
 else
-say (join (join [I am ] (recognise image (backdrop image :: #3fbc8d) confidence :: #4b4c60)) [banana])
+say (join (join [The model is  ] (recognise image (backdrop image :: #3fbc8d) confidence :: #4b4c60)) [banana])
 end
 
 ```
@@ -315,9 +315,9 @@ Replace the word `banana` with the text `% certain that is NOT a hotdog!`:
 ```blocks3
 when green flag clicked
 if <(recognise image (backdrop image :: #3fbc8d) label :: #4b4c60)=(hotdog :: #4b4c60)> then
-say (join (join [I am ] (recognise image (backdrop image :: #3fbc8d) confidence :: #4b4c60)) (join [% sure that is a ] (recognise image (backdrop image :: #3fbc8d) label :: #4b4c60)))
+say (join (join [The model is  ] (recognise image (backdrop image :: #3fbc8d) confidence :: #4b4c60)) (join [% certain that is a ] (recognise image (backdrop image :: #3fbc8d) label :: #4b4c60)))
 else
-say (join (join [I am ] (recognise image (backdrop image :: #3fbc8d) confidence :: #4b4c60)) [% certain that is NOT a hotdog!])
+say (join (join [The model is  ] (recognise image (backdrop image :: #3fbc8d) confidence :: #4b4c60)) [% certain that is NOT a hotdog!])
 end
 
 ```
