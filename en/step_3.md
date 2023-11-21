@@ -1,8 +1,8 @@
 ## Train the model
 
-Imagine teaching a friend how to differentiate between two types of fruits, let's say apples and bananas, by showing them pictures. At first, they might get confused, especially if they've never seen these fruits before. But as you keep showing them more pictures and they get a better understanding of the patterns in the differences and similarities, they start to get the hang of it. After a while, they will be able to correctly identify apples and bananas on their own.
+Imagine teaching an alien how to differentiate between two types of fruits, let's say apples and bananas, by showing them pictures. At first, they might get confused, especially if they've never seen these fruits before. But as you show them more pictures and they get a better understanding of the differences and similarities, they start to get the hang of it. After a while, they will be able to correctly identify apples and bananas on their own.
 
-Training a machine learning model is kind of like this process, but with a computer instead of a friend. For your classifier, we want to determine 'hotdogs' and 'not hotdogs', so you need to define these two groups to the model, then provide lots of examples of each.
+Training a machine learning model is kind of like this process, but with a computer instead of an alien. For your classifier, we want to determine 'hotdogs' and 'not hotdogs', so you need to define these two groups to the model, then provide lots of examples of each.
 
 --- task ---
 
@@ -21,13 +21,13 @@ We have collected two image sets for you to train your new machine learning mode
 
 [[[not-hotdog-train]]]
 
-Look through the training data and **choose several images of hotdogs and several images of other things** from the data. The more images of each type you pick, the more accurate your model will be. 
+Look through the training data and **choose several of the best images showing hotdogs and several images of other things** from the data. The more images of each type you pick, the more accurate your model will be.  
 
 --- /task ---
 
 --- task ---
 
-Drag and drop your chosen images into the relevant class (`hotdog` or `nothotdog`).
+Choose at least 10 images for each class, then drag and drop your chosen images into the relevant class (`hotdog` or `nothotdog`). 
 ![](images/hotdog_classes.png)
 
 --- collapse ---
@@ -83,16 +83,16 @@ Some data has been kept aside to use as test data.
 title: Training data vs. testing data
 ---
 
-To teach a machine learning model to classify a specific item, we provide it with a particular set of data called **training data**. This data set is similar to the exercises in a textbook that have answers; they help in understanding and practicing the topic.
+To train a machine learning model to classify a specific item, we provide it with a particular set of data called **training data**. This data set is similar to the exercises in a textbook that have answers; they help in understanding and practicing the topic.
 
 After processing the training data, it's essential to check the program's performance. For this, we introduce it to a new set of data known as **testing data**. Think of this as taking a quiz or test at school: the questions aren't identical to what you practiced, but they cover the same topic.
 
 **Why keep them separate?**
 If we use the same data for both training and testing, it's like giving you a maths test with the exact same questions you practised with. You might get all the answers right, but it doesn't show if you understand the topic broadly. It only shows that you know those specific questions.
 
-Similarly, if we test the model with the same data it was trained on, we can't be sure if it has analysed enough data to make accurate predictions or if it just "remembers" that specific data. By using different data for testing, we can get a better idea of how well the model can handle new, unseen situations.
+Similarly, if we test the model with the same data it was trained on, we can't be sure if it has analysed enough data to make accurate predictions or if it has already classified that specific data during training. By using different data for testing, we can get a better idea of how well the model can classify **new** items of data.
 
-So, it's essential to keep the training and testing data separate to ensure that the model can perform the task accurately in various situations, not just the ones it has seen before.
+So, it's essential to keep the training and testing data separate to make sure you get a realistic assessment of how the model performs. 
 
 --- /collapse ---
 
@@ -149,18 +149,18 @@ title: Bias and data
 
 When we train a model to classify different things, like dogs and cats, we need to give it lots of examples. These examples are called **training data**.
 
-If we use a training data set that contains mostly small dogs and large cats, this does not accurately represent the real world as there are also large dogs and small cats. If the data used to train the model is not representative of what you're trying to model, the prediction that your model makes won't be either.
+If we use a training data set that contains mostly small dogs and large cats, this does not accurately represent the real world as there are also large dogs and small cats. If the training data is not representative of what you want to model, the model is more likely to output an incorrect prediction.
 
-This is called **bias**, which means the model favours one thing over another. We can fix this by using a more diverse training data set that includes different sizes and breeds of dogs and cats. By doing this, we can help the model identify the features that distinguish each type of animal, rather than just relying on the animal's size.
+This is called **bias**, which means the model favours one thing over another. We can fix this by using a more diverse training data set that includes different sizes, colours, and breeds of dogs and cats. By doing this, we can help the model identify the features that distinguish each type of animal, rather than just relying on the animal's size.
 
 --- /collapse ---
 
 <p style='border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;'>
 Imagine you are making an app that predicts the age of people. 
 <br><br>
-Now think of ten people whose pictures you could use for your training data? What bias would you introduce? Have you picked people from a range of age groups? Would your app work with people from all over the world with different face shapes and skin tones?
+Now think of ten people whose pictures you could use for your training data: what bias would you introduce? Have you picked people from a range of age groups? Would your app work with people from all over the world with different face shapes and skin tones?
 <br><br>
-By using more diverse and representative training data to avoid <strong>bias</strong>, we can help ensure that the model makes accurate and fair predictions when it encounters new examples. This can make the computer more useful and reliable for different applications, from sorting pet adoption photos to assisting veterinarians in diagnosing animal health issues.
+By using more diverse and representative training data to avoid bias, <strong>we</strong> can help ensure that the model makes accurate and fair predictions when it encounters new examples. This can make the model more useful and reliable for different applications.
 </p>
 
 Let's start making your machine learning application in Scratch and think about what it will do!
