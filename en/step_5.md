@@ -25,7 +25,7 @@ Use an `if/else`{:class="block3control"} block with an equals operator to check 
 
 --- /collapse ---
 
-+ Make your application do something based on how confident it is about its prediction:
++ Make your application do something based on how confident the model is about its prediction:
 
 --- collapse ---
 ---
