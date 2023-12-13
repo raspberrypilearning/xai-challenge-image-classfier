@@ -32,7 +32,7 @@ Choose at least 10 images for each class, then drag and drop your chosen images 
 
 --- collapse ---
 ---
-title: Adding training images with drag & drop
+title: Add training images with drag & drop
 ---
 
 To 'drag and drop' images into your classes easily, you can set up the windows on your screen side-by-side by clicking on and dragging the tab you are working on to one side of the screen:
@@ -83,9 +83,9 @@ Some data has been kept aside to use as test data.
 title: Training data vs. testing data
 ---
 
-To train a machine learning model to classify a specific item, we provide it with a particular set of data called **training data**. This data set is similar to the exercises in a textbook that have answers; they help in understanding and practicing the topic.
+To train a machine learning model to classify a specific item, we provide it with a particular set of data called **training data**. This data set is similar to the exercises in a textbook that have answers; they help in understanding and practising the topic.
 
-After processing the training data, it's essential to check the program's performance. For this, we introduce it to a new set of data known as **testing data**. Think of this as taking a quiz or test at school: the questions aren't identical to what you practiced, but they cover the same topic.
+After processing the training data, it's essential to check the program's performance. For this, we introduce it to a new set of data known as **testing data**. Think of this as taking a quiz or test at school: the questions aren't identical to what you practised, but they cover the same topic.
 
 **Why keep them separate?**
 If we use the same data for both training and testing, it's like giving you a maths test with the exact same questions you practised with. You might get all the answers right, but it doesn't show if you understand the topic broadly. It only shows that you know those specific questions.
@@ -96,7 +96,7 @@ So, it's essential to keep the training and testing data separate to make sure y
 
 --- /collapse ---
 
-To see how successful your model is at classifying the test data, test your model with some of the images:
+To see how successful your model is at classifying the test data, test your model with some new images:
 
 --- task ---
 
