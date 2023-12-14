@@ -3,7 +3,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Your model is trained, tested, and ready to use, but to use it you need to create a Scratch project that can allow your user to input images and classify the input as `hotdog` or `nothotdog`.
+Your model is trained, tested, and ready to use, but to use it you need to create a Scratch project that allows your user to input images and classify the input as `hotdog` or `nothotdog`.
 </div>
 <div>
 ![Photo of a hotdog with the Scratch cartoon cat in front of it. The cat has a speech bubble giving the confidence score from a machine learning model that has correctly classified the image as a hotdog.](images/demo_shot.png){:width="300px"}
@@ -43,7 +43,7 @@ The new grey blocks you can see in that menu allow you to access your machine le
 
 --- collapse ---
 ---
-title: Pro tip - Save your work!
+title: Pro tip: Save your work!
 ---
 
 This special version of Scratch allows you to access your machine learning model, **but** if you try to open your project in another version of Scratch online **it won’t work**. 
@@ -86,7 +86,7 @@ end
 
 --- /task ---
 
-Your application needs to classify the image your user has uploaded as `hotdog` or `not-hotdog`. To do this, it needs to compare the uploaded image against the `hotdog` class in the model.
+Your application needs to classify the image your user has uploaded as `hotdog` or `nothotdog`. To do this, it needs to compare the uploaded image against the `hotdog` class in the model.
 
 --- task ---
 
@@ -151,7 +151,7 @@ end
 
 Now, you're going to create the message your application will show to the user when it has classified their image. To do that, you're going to `join`{:class="block3operators"} some bits of text (called strings) with data from your machine learning model using specific blocks. 
 
-The example message will say: "The model is `(confidence: number)`% certain that is a `(model label: hotdog/not_hotdog)`%  !
+The example message will say: "The model is `(confidence: number)`% certain that is a `(model label: hotdog/nothotdog)`%  !
 
 --- task ---
 
@@ -262,7 +262,7 @@ The final piece of the puzzle is to now use the image your user entered as the i
 
 --- task ---
 
-From the aqua coloured `Images`{:class="block3operators"} menu, drop three round `backdrop image`{:class="block3operators"} bubbles into the white slots that say `image`:
+From the aqua-coloured `Images`{:class="block3operators"} menu, drop three round `backdrop image`{:class="block3operators"} bubbles into the white slots that say `image`:
 
 ```blocks3
 when green flag clicked
