@@ -40,7 +40,7 @@ Use the `recognise image (backdrop image) confidence` block with size and volume
 
 **This was just the warm up!** Now that you know how to build an image classification application that can detect hotdogs, you can decide what **you** want to make next! 
 
-In the next stage of the Experience AI challenge, you'll get to use the skills you've learnt in this project to create something totally cool and unique using Scratch and machine learning! 
+In the next stage of the Experience AI Challenge, you'll get to use the skills you've learnt in this project to create something totally cool and unique using Scratch and machine learning! 
 
 --- task ---
 
